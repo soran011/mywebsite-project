@@ -1,7 +1,7 @@
 .nav {
-  background: black;
+  background:rgba(0, 0, 0, 0.5);
   height: 80px;
-  //   margin-top: -80px;
+    margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@
           cursor: pointer;
 
           &.active {
-            border-bottom: 3px solid #01bf71;
+            border-bottom: 3px solid #d4af37 ;
           }
         }
       }
@@ -87,7 +87,7 @@
 
       .nav__container--btn__link {
         border-radius: 50px;
-        background: #01bf71;
+        background:#d4af37 ;
         white-space: nowrap;
         padding: 10px 22px;
         color: #010606;

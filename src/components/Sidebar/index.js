@@ -19,16 +19,16 @@ function Sidebar({isOpen, toggle}) {
             </div>
             <div className="sidebarContainer__wrapper">
                 <div className="sidebarContainer__wrapper--menu">
-                    <Scroll className="sidebarContainer__wrapper--menu__link" to="about">
+                    <Scroll className="sidebarContainer__wrapper--menu__link" to="about" onClick={toggle}>
                         About
                     </Scroll>
-                    <Scroll className="sidebarContainer__wrapper--menu__link" to="discover">
+                    <Scroll className="sidebarContainer__wrapper--menu__link" to="discover" onClick={toggle}>
                         Discover
                     </Scroll>
-                    <Scroll className="sidebarContainer__wrapper--menu__link" to="services">
+                    <Scroll className="sidebarContainer__wrapper--menu__link" to="services" onClick={toggle}>
                         Services
                     </Scroll>
-                    <Scroll className="sidebarContainer__wrapper--menu__link" to="signup">
+                    <Scroll className="sidebarContainer__wrapper--menu__link" to="signup" onClick={toggle}>
                         Sign Up
                     </Scroll>
                 </div>
