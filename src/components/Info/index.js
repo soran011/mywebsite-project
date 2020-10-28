@@ -1,27 +1,46 @@
-import React from 'react'
-import { Button } from 'react-scroll';
-import './Info.scss'
+import React from "react";
+import { Button } from "react-scroll";
+import {
+  Column2,
+  ImgWrap,
+  InfoContainer,
+  InfoWrapper,
+  InfoRow,
+  Column1,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  BtnWrap,
+  Img,
+} from "./InfoElements";
 
 const Info = () => {
-    return (
-        <>
-          <InfoContainer className="infoContainer" id={id}>
-              <div className="infoContainer__wrapper">
-                  <div className="infoContainer__wrapper--row">
-                    <div className="infoContainer__wrapper--row__colum1">
-                        <div className="infoContainer__wrapper--row__colum1--text">
-                            <div className="infoContainer__wrapper--row__colum1--text__topline">TopLine</div>
-                            <div className="infoContainer__wrapper--row__colum1--text__heading">Heading</div>
-                            <div className="infoContainer__wrapper--row__colum1--text__subtitle">Subtitle</div>
-                            <Button to='home'>Button</Button>
-                        </div>
-                    </div>
-                  </div>
-
-              </div>
-            </InfoContainer>  
-        </>
-    )
-}
+  return (
+    <>
+      <InfoContainer>
+        <InfoWrapper>
+          <InfoRow>
+            <Column1>
+              <TextWrapper>
+                <TopLine>TopLine</TopLine>
+                <Heading>Heading</Heading>
+                <Subtitle>Subtitle</Subtitle>
+                <BtnWrap>
+                  <Button to="home"/>
+                </BtnWrap>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img />
+              </ImgWrap>
+            </Column2>
+          </InfoRow>
+        </InfoWrapper>
+      </InfoContainer>
+    </>
+  );
+};
 
 export default Info;
