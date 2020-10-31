@@ -22,9 +22,15 @@ import {
   WebsiteRights
 } from "./FooterElements";
 
+import {animateScroll as scroll} from 'react-scroll';
+
 
 
 function Footer() {
+
+  const toggleHome = ()=> {
+    scroll.scrollToTop()
+  }
   return (
     <FooterContainer>
       <FooterWrapper>
@@ -66,7 +72,7 @@ function Footer() {
 
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">MyWebsite</SocialLogo>
+            <SocialLogo to="home" to='/' onClick={toggleHome}>MyWebsite</SocialLogo>
             <WebsiteRights>
               MyWebsite © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>

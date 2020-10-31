@@ -11,7 +11,7 @@ const Hero = () => {
         setHover(!hover)
     }
     return (
-        <div className="heroContainer">
+        <div className="heroContainer" id='home'>
             <div className="heroContainer__background">
                 <VideoBackground  autoPlay loop muted src={Video} type='video/mp4' />
             </div>
@@ -24,6 +24,7 @@ const Hero = () => {
                     onMouseLeave={onHover}
                     primary='true'
                     dark='true'
+                    smooth={true} duration={500} spy={true} exact='true'
                     >
                         Get Started {hover ? <ArrowForward /> : <ArrowRight/>}
                     </Button>
