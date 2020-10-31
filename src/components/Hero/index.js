@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
             <div className="heroContainer__content">
                 <h1>Welcome To My Website</h1>
-                <p>Contact us today to check our products and services</p>
+                <p>I built this Responsive Webiste to demonstrate my skills as a front-end developer!</p>
                 <div className="heroContainer__content--wrapper">
                     <Button className="heroContainer__content--wrapper__btn" to="signup" 
                     onMouseEnter={onHover} 
